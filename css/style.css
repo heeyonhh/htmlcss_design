@@ -14,7 +14,6 @@ html {
 }
 
 ul,
-ol,
 li {
     list-style: none;
     margin: 0;
@@ -104,6 +103,10 @@ body {
     font-size: 14px;
 }
 
+#header_wrap nav #nav1 #nav_right li:hover a{
+    color: #069dfa;
+}
+
 /* 메인 메뉴 영역 */
 #header_wrap #header {
     width: 100%;
@@ -137,54 +140,56 @@ body {
 
 #header_menu {
     float: left;
+    width: 800px;
     height: 50px;
 }
 
 /* 메인메뉴 */
-#header_menu>ul>li {
-    margin-right: 70px;
+#header_menu > ul > li {
     float: left;
     position: relative;
 }
 
-#header_menu>ul>li>a {
+#header_menu > ul > li > a {
     font-size: 19px;
-    font-weight: 750;
+    font-weight: bold;
     display: block;
-    padding: 5px 20px;
+    padding-right: 80px;
 }
 
-#header_menu ul li>a:hover {
+#header_menu > ul > li:hover > a {
     color: #069dfa;
 }
 
 /* 서브메뉴 */
 #header_menu > ul > li > ul {
+    width: 100%;
     position: absolute;
-    top: 65px;
-    left: 20px;
+    top: 50px;
+    left: 0;
     height: 0;
     overflow: hidden;
-    transition: all 1s;
-    z-index: 99999;
+    transition: all 0.5s;
 }
 
-#header_menu > ul > li > ul > li {
-    width: 150px;
-    height: 45px;
+#header_menu > ul > li > ul > li > a{
+    width: 100%;
+    font-size: 15px;
+    display: block;
+    padding: 15px 15px 15px 0;
 }
 
-#header_menu > ul > li:hover > ul {
-    height: 150px;
+#header_menu > ul > li:hover > ul{
+    height: 160px;
 }
 
 /* 서브 배경 */
-#header_wrap>.sub1_bg {
+#header_wrap .sub1_bg {
     width: 100%;
     height: 0px;
     background: rgb(253, 253, 253);
     box-shadow: 3px 2px 5px rgb(124, 122, 122);
-    transition: all 1s;
+    transition: all 0.5s;
     position: absolute;
     top: 101px;
     left: 0;
@@ -192,7 +197,7 @@ body {
 }
 
 #header_wrap #header:hover+.sub1_bg {
-    height: 150px;
+    height: 160px;
 }
 
 /* 섹션 1 영역 */
@@ -201,34 +206,34 @@ body {
     height: 940px;
 }
 
-#section1>#section1_1 {
+#section1 #section1_1 {
     width: 1200px;
     height: 940px;
     margin: 0 auto;
     position: relative;
 }
 
-#section1>#section1_1>#section1_textbox {
+#section1 #section1_1 #section1_textbox {
     width: 800px;
     height: 940px;
     margin: 0 auto;
     padding-top: 160px;
 }
 
-#section1>#section1_1>#section1_textbox>p.textbox1 {
+#section1 #section1_1 #section1_textbox p.textbox1 {
     font-size: 50px;
     text-align: center;
     color: #484949;
 }
 
-#section1>#section1_1>#section1_textbox>p.textbox2 {
+#section1 #section1_1 #section1_textbox p.textbox2 {
     font-size: 20px;
     text-align: center;
     margin-top: 20px;
     color: #484949;
 }
 
-#section1>#section1_1>#section1_phone {
+#section1 #section1_1 #section1_phone {
     width: 300px;
     height: 500px;
     position: absolute;
@@ -248,7 +253,7 @@ body {
     }
 }
 
-#section1>#section1_1>#section1_phone2 {
+#section1 #section1_1 #section1_phone2 {
     width: 250px;
     height: 360px;
     position: absolute;
@@ -268,7 +273,7 @@ body {
     }
 }
 
-#section1>#section1_1>#section1_bg {
+#section1 #section1_1 #section1_bg {
     background: url(../img/section1-bg.png) no-repeat center;
     width: 1920px;
     height: 280px;
@@ -298,7 +303,7 @@ body {
     background: #ffca00;
 }
 
-#section2>#section2_1 {
+#section2 #section2_1 {
     width: 1200px;
     height: 940px;
     margin: 0 auto;
@@ -306,7 +311,7 @@ body {
     position: relative;
 }
 
-#section2>#section2_1>#section2_i {
+#section2 #section2_1 #section2_i {
     width: 490px;
     height: 650px;
     position: absolute;
@@ -314,7 +319,7 @@ body {
     left: 140px;
 }
 
-#section2>#section2_1>#section2_t {
+#section2 #section2_1 #section2_t {
     width: 600px;
     height: 500px;
     position: absolute;
@@ -324,7 +329,7 @@ body {
     animation-iteration-count: infinite;
 }
 
-#section2>#section2_1>#section2_t>.section2_text1 {
+#section2 #section2_1 #section2_t .section2_text1 {
     font-size: 3em;
     line-height: 1.2;
 }
@@ -340,21 +345,21 @@ body {
     }
 }
 
-#section2>#section2_1>#section2_t>#section2_ico {
+#section2 #section2_1 #section2_t #section2_ico {
     width: 500px;
-    height: 94px;
+    height: 94px; 
     padding: 30px 0 30px 0;
 }
 
-#section2>#section2_1>#section2_t>#section2_ico>img {
+#section2 #section2_1 #section2_t #section2_ico img {
     margin-right: 20px;
 }
 
-#section2>#section2_1>#section2_t>#section2_ico>img:hover{
+#section2 #section2_1 #section2_t #section2_ico img:hover{
     transform: scale(1.2);
 }
 
-#section2>#section2_1>#section2_t>.section2_text2 {
+#section2 #section2_1 #section2_t .section2_text2 {
     font-size: 18px;
     color: #484949;
 }
@@ -368,27 +373,27 @@ body {
     background-color: #069dfa;
 }
 
-#section3 > #section3_1{
+#section3 #section3_1{
     width: 1200px;
     height: 940px;
     margin: 0 auto;
     position: relative;
 }
 
-#section3 > #section3_1 > #section3_bg {
+#section3 #section3_1 #section3_bg {
     position: absolute;
     bottom: 0px;
     left: 100px;
 }
 
-#section3 > #section3_1 > #section3_bg > img:last-child{
+#section3 #section3_1 #section3_bg img:last-child{
     position: absolute;
     bottom: 150px;
     left: 460px;
 }
 
 
-#section3>#section3_1>#section3_text {
+#section3 #section3_1 #section3_text {
     width: 400px;
     height: 200px;
     margin: 0 auto;
@@ -397,18 +402,18 @@ body {
 }
 
 
-#section3>#section3_1>#section3_text>.section3_text1 {
+#section3 #section3_1 #section3_text .section3_text1 {
     font-size: 3em;
     color: white;
     line-height: 1.2;
 }
 
-#section3>#section3_1>#section3_text>.section3_text2 {
+#section3 #section3_1 #section3_text .section3_text2 {
     font-size: 18px;
     color: white;
 }
 
-#section3>#section3_1>#section3_img {
+#section3 #section3_1 #section3_img {
     width: 1200px;
     height: 500px;
     margin: 0 auto;
@@ -423,33 +428,33 @@ article {
     height: 940px;
 }
 
-article > #article {
+article #article {
     width: 1200px;
     height: 940px;
     margin: 0 auto;
 }
 
-article > #article > #article_tit{
+article #article #article_tit{
     width: 900px;
     height: 250px;
     margin: 0 auto;
 }
 
-article > #article > #article_tit > .article_text{
+article #article #article_tit .article_text{
     margin: 0 auto;
     font-size: 45px;
     text-align: center;
     padding-top: 90px;
 }
 
-article > #article > #article_tit > .article_text2{
+article #article #article_tit .article_text2{
     margin: 0 auto;
     font-size: 20px;
     text-align: center;
 }
 
 /* 아티클 슬라이드 배너 영역 */
-article > #article > .article {
+article #article .article {
     width: 945px;
     height: 540px;
     margin: 0 auto;
@@ -470,7 +475,7 @@ article > #article > .article {
     font-size: 0;
 }
 
-.article .slidelist > li{
+.article .slidelist li{
     display: inline-block;
     vertical-align: middle;
     width: 945px;
@@ -479,13 +484,13 @@ article > #article > .article {
     transition: all .5s;
 }
 
-.article .slidelist > li > a{
+.article .slidelist li a{
     display: block;
     margin: 0 auto;
     position: relative;
 }
 
-.article .slidelist > li > a img{
+.article .slidelist li a img{
     width: 945px;
     height: 540px;
     margin: 0 auto;
@@ -501,7 +506,7 @@ article > #article > .article {
     position: relative;
 }
 
-.article4 > .article_text3{
+.article4 .article_text3{
     font-size: 30px;
     color: #fff;
     z-index: 1;
@@ -530,19 +535,19 @@ article > #article > .article {
     background: url('../img/right.png') center center / 100% no-repeat;
 }
 
-.article #slide01:checked ~ .slidewrap .slidelist > li {
+.article #slide01:checked ~ .slidewrap .slidelist li {
     transform : translateX(0%);
 }
 
-.article #slide02:checked ~ .slidewrap .slidelist > li {
+.article #slide02:checked ~ .slidewrap .slidelist li {
     transform : translateX(-100%);
 }
 
-.article #slide03:checked ~ .slidewrap .slidelist > li {
+.article #slide03:checked ~ .slidewrap .slidelist li {
     transform : translateX(-200%);
 }
 
-.article #slide04:checked ~ .slidewrap .slidelist > li {
+.article #slide04:checked ~ .slidewrap .slidelist li {
     transform : translateX(-300%);
 }
 
@@ -553,36 +558,36 @@ article > #article > .article {
     background-color: #f7f5f5;
 }
 
-#app > #app_1{
+#app #app_1{
     width: 1200px;
     height: 300px;
     margin: 0 auto;
 }
 
-#app > #app_1 > #app_left{
+#app #app_1 #app_left{
     width: 800px;
     height: 300px;
     float: left;
 }
 
-#app > #app_1 > #app_left > p{
+#app #app_1 #app_left p{
     font-size: 48px;
     padding: 90px 0 7px 120px;
 }
 
-#app > #app_1 > #app_left > a{
+#app #app_1 #app_left a{
     color: #069dfa;
     font-weight: bold;
     padding-left: 125px;
 }
 
-#app > #app_1 > #app_right{
+#app #app_1 #app_right{
     width: 300px;
     height: 300px;
     float: left;
 }
 
-#app > #app_1 > #app_right > img{
+#app #app_1 #app_right img{
     margin: 60px;
 }
 
@@ -592,46 +597,46 @@ footer {
     height: 300px;
 }
 
-footer>#footer1 {
+footer #footer1 {
     width: 100%;
     height: 110px;
 }
 
-footer>#footer1>#footer1_1 {
+footer #footer1 #footer1_1 {
     width: 1200px;
     height: 110px;
     margin: 0 auto;
 }
 
-footer>#footer1>#footer1_1>#lottemembers {
+footer #footer1 #footer1_1 #lottemembers {
     padding-top: 70px;
     width: 180px;
     height: 40px;
 }
 
-footer>#footer1>#footer1_1>#company>a {
+footer #footer1 #footer1_1 #company a {
     font-size: 14px;
     color: black;
     float: left;
     margin: 70px 35px 0 0;
 }
 
-footer>#footer1>#footer1_1>#sns {
+footer #footer1 #footer1_1 #sns {
     width: 150px;
     height: 40px;
     padding-top: 70px;
 }
 
-footer>#footer1>#footer1_1>#sns>a {
+footer #footer1 #footer1_1 #sns a {
     margin-left: 20px;
 }
 
-footer>#footer2 {
+footer #footer2 {
     width: 100%;
     height: 60px;
 }
 
-footer>#footer2>#footer2_1 {
+footer #footer2 #footer2_1 {
     width: 1020px;
     height: 80px;
     margin: 0 auto;
@@ -640,25 +645,25 @@ footer>#footer2>#footer2_1 {
     padding-left: 180px;
 }
 
-footer>#footer3 {
+footer #footer3 {
     width: 100%;
     height: 120px;
 }
 
-footer>#footer3>#footer3_1 {
+footer #footer3 #footer3_1 {
     width: 1020px;
     height: 120px;
     margin: 0 auto;
 }
 
-footer>#footer3>#footer3_1>#footer3_left {
+footer #footer3 #footer3_1 #footer3_left {
     font-size: 14px;
     padding-left: 90px;
     padding-top: 40px;
     width: 200px;
 }
 
-footer>#footer3>#footer3_1>#footer3_right {
+footer #footer3 #footer3_1 #footer3_right {
     float: right;
     margin: 0;
     padding: 0;
